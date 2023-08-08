@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+
+body{
+   background-color: #898989;
+   margin:0;
+   padding:0;
+   font-size:0.7em;
+   line-height:1.2em;
+}
+
+#wrap{
+   width:971px;
+   text-align: center;
+   margin:0;
+
+   margin-left: auto; margin-right: auto;
+   /* 볼록수준 요소 태그에 너비를 지정 한 후 수평 좌우 중앙정렬*/
+
+   background-image: url(../images/shadow.png);
+   background-repeat: repeat-y;
+   min-height: 980px; /* 최소 높이*/
+}
+
+#logo{
+   float:left;
+   width:265px;
+   margin:60px 0 0 40px; /* 시계 방향으로 바깥 위, 오른쪽, 아래쪽, 왼쪽*/
+}
+
+nav{ /* 메뉴를 오른쪽에 배치 */
+   width:600px; 
+   margin:73px 20px 0 0;
+   float:right;
+}
+
+nav ul{
+   list-style:none; /*목록 앞 점 없앰*/
+   font-family: Verdana, Geneva, sans-serif;
+   font-size:12px;   
+   font-weight:bold;
+   color:#333;
+}
+
+nav ul li{
+   float:left; /* 메뉴 수직 -> 수평*/
+   margin: 0 5px; /* 상하 바깥여백을 0픽셀, 좌우 바깥여백은 5픽셀 */
+}
+
+nav a{
+   display: block;
+   height: 20px;
+   padding: 10px;
+   text-decoration: none; /* 밑줄선 제거 */
+   color:#333;
+}
+
+#login{
+   float:right;
+   margin: 20px 64px 0 0;
+   font-family: Arial, Helvetica, sans-serif;
+   
+   word-spacing: 5px; /* 단어 사이 간격 */
+}
+
+.clear{
+   clear:both; /* float 속성을 제거하여 잘못된 ui 적용을 방지함 */
+}
+
+#login a{
+   text-decoration:none;
+   color:#333;
+}
+
+/* index.jsp 메인 이미지 */
+
+#main_img{
+   width: 971px;
+   height: 308px;
+
+   background-image: url("../images/img_back.png");
+   background-repeat: no-repeat;
+   background-position: center top;
+}
+
+#main_img img{
+   margin:9px 0 0 0;
+}
+
+/* 메인 본문 UI */
+#main_cont{
+   margin:5px 0 5px 0;
+}
+
+#solution{
+   border:1px solid red;
+   border-radius:10px;
+
+   width:910px;
+   min-height: 150px;
+   background-color: #EBEBEB;
+
+   padding:10px;
+   margin-left:20px;
+}
+
+#hosting, #security, #payment{
+   float: left; /* 복수개의 수직정렬을 수평정렬로 배치 */
+   width:30%;
+   padding: 10px;
+}
