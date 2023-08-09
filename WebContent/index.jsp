@@ -12,10 +12,10 @@ contentType="text/html;charset=UTF-8"은 웹브라우저에 출력되는 문자,
  <div id="wrap">
   <header> <%-- header; 상단부분 지정(html5에서 추가) --%>
     <%--회사로고 --%>
-    <div id="login"><a href="index.jsp">login</a> | 
+    <div id="login"><a href="#">login</a> | 
       <a href="#">Join</a></div>
    <div id="logo">
-    <img src="./images/logo.gif" width="265" height="62" alt="Fun Web">
+    <a href="index.jsp"><img src="./images/logo.gif" width="265" height="62" alt="Fun Web"></a>
    </div>
    
    <%--상단메뉴--%>
@@ -23,7 +23,7 @@ contentType="text/html;charset=UTF-8"은 웹브라우저에 출력되는 문자,
    <%--nav; 메뉴구성시 사용 (html5) --%>
    <ul>
      <li><a href="index.jsp">HOME</a></li>
-     <li><a href="#">COMPANY</a></li>
+     <li><a href="./company/welcome.jsp">COMPANY</a></li>
      <li><a href="#">SOLUTION</a></li>
      <li><a href="#">CUSTOMER CENTER</a></li>
      <li><a href="#">CONTACT US</a></li>
@@ -32,6 +32,7 @@ contentType="text/html;charset=UTF-8"은 웹브라우저에 출력되는 문자,
   </header>
 
   <div class="clear"></div>
+  
   <%-- 메인 본문 이미지 --%>
   <div id="main_img">
     <img src="./images/main_img.jpg">
@@ -124,11 +125,21 @@ contentType="text/html;charset=UTF-8"은 웹브라우저에 출력되는 문자,
   </div>
  </article>
  
+ <div class="clear"></div>
+ 
  <%--메인하단 --%>
  <footer> <%--footer; 하단영역 지정 --%>
- 
- </footer>
- 
+  <hr>
+    <div id="copy">
+      All contents CopyRight 2023 FunWeb Inc. all rights reserved<br>
+      Contact mail : funweb@funwebbiz.com Tel: +82 64 123 4315 Fax +82 64 123 5678
+    </div>
+
+  <div id="social">
+    <a href="https://ko-kr.facebook.com/" target="_blank"><img src="./images/facebook.gif" width="33" height="33" alt="FaceBook"></a>
+    <a href="https://twitter.com/" target="_blank"><img src="./images/twitter.gif" width="33" height="33" alt="Twitter"></a>
   </div>
+ </footer>
+ </div>  
 </body>
 </html>

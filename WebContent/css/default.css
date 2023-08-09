@@ -255,3 +255,32 @@ nav a:hover{
 #news_notice a:hover{
 	text-decoration: none; color:#f90;
 }
+
+/* index.jsp footer 하단 영역 ui */
+footer{
+	margin: 50px 0 0 0;
+	height: 80px;
+	background: url(../images/under_logo.gif);
+	background-repeat: no-repeat;
+	background-position: 40px center;
+
+}
+
+footer hr{
+	width: 900px;
+}
+
+#copy{
+	width: 450px; float: left; /*왼쪽에 배치 */
+	margin: 20px 0 0 190px;
+}
+
+#social{
+	width: 130px; float: right; /*오른쪽에 배치 */
+	margin: 20px 20px 0 0;
+}
+
+#social img{
+	margin: 0 7px; 
+	/*상하 바깥여백 0픽셀, 좌우 바깥여백 7픽셀로 처리 */
+}
