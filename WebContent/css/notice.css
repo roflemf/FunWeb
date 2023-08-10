@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/*notice.jsp ui*/
+/*서브 메인 이미지*/
+
+#sub_img_center{
+    width: 971px; height: 179px;
+    background-image: url(../images/center/sub_back.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+#notice{
+    width: 670px;
+    border-collapse: collapse;
+    /*표테이블 테두리선을 분리하지 않고(합쳐서) 한줄로 그림 
+     (이중선 X)*/
+    
+}
+#notice th{
+    height: 20px;
+    text-transform: capitalize;
+    /*영문 단어 첫글자만 대문자로 */
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold; /*글자 진하게 (열제목 진하게)*/
+    padding: 5px; /*상하좌우 안여백을 동시에 5픽셀 */
+    background-image: url(../images/center/t_back.jpg);
+    background-repeat: repeat-x; /* x축 수평으로 반복 */
+    background-position: center center;/*x축 center y축 center */
+    color: #FFF;
+    
+
+
+}
+
+#notice td{
+    text-align: center; 
+    padding: 6px 0px;
+    border-bottom-width:1px; /*밑줄선 두께 */
+    border-bottom-style: dotted; /*밑줄선 스타일 */
+    border-bottom-color: #999; /*밑줄선 색상 */
+    
+}
+
+#notice td.left{
+    text-align: left;
+    padding-left: 14px;
+    /* 왼쪽 안 여백을 주어; 들여쓰기 */
+
+}
+
+#notice .tno{
+    width: 50px;
+    border-top-left-radius: 5px; 
+    /*테두리 좌상단 둥글게 */
+    border-bottom-left-radius: 5px;
+    /*테두리 좌하단 둥글게 */
+
+}
+
+#notice .title{
+    width: 400px;
+    letter-spacing: 0.7em; /*글자간 자간간격 조정 *em; 상대적 크기 */
+
+}
+
+#notice .twrite{
+    width:100px;
+
+}
+
+#notice .tdate{
+    width: 50px;
+}
+
+#notice .tread{
+    width: 50px;
+    border-top-right-radius: 5px; /*테두리 둥글게 */
+    border-bottom-right-radius: 5px;
+}
+
+#table_search{
+    float: right; 
+    margin: 15px 5px 10px 0;
+}
+
+#table_search .input_box{
+    width: 200px;
+    height: 20px;
+    border: 1px solid #333;
+    border-radius: 10px; 
+    background-color: #fefded;
+}
+
+#table_search .btn{
+    width: 90px;
+    height: 23px;
+    margin: 0 0 0 5px; /*상하좌우 바깥여백 */
+    padding: 2px; /*상하좌우 안여백 */
+    border:1px solid #999;
+    color: #fff;
+    border-radius: 10px;
+    background-image: url(../images/center/t_back.jpg);
+    background-repeat: repeat-x;
+    background-position: center center;
+}
+
+#page_control{
+    text-align: center;
+    margin-top: 20px; /*바깥 상단 여백 */
+}
+#page_control a{
+    text-decoration: none; /*밑줄선 제거 */
+    padding: 2px 5px; /*상하 좌우 안여백 */
+    color : #333;
+    margin : 0px 5px; /* 좌우 바깥여백 */
+}
+
+#page_control a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color:#f90;
+}
+
+#notice tr:hover{
+    background-color: #4cb8d6;
+    cursor: pointer; cursor: hand; 
+    /*마우스 오버시 ; 화살표 마우스 포인터 -> 손가락 모양 */ 
+
+}

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/*서브 메인 이미지 */
+#sub_img_member{
+    width: 971px;
+    height: 179px;
+    background-image: url(../images/member/sub_back.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#join{
+    width: 670px;
+    margin: 10px 0 0 0;
+
+}
+
+#join fieldset{
+    border: none; 
+    /*fieldset 그룹 경계선 사라지게 함*/
+    padding: 10px 0 20px 5px;
+}
+
+#join legend{
+    font-size: 20px;
+    border-bottom: 1px dotted #666; 
+    /*그룹 제목 밑줄선 두께, 선 스타일, 선색 지정 */
+    width: 600px;
+    padding: 8px 0; /*상하 안여백 8px, 좌우 안여백 5px*/
+
+}
+
+#join label{
+    float: left;
+    width: 140px;
+    margin: 5px 0; /*상하 바깥여백 5픽셀, 좌우 바깥여백 0픽셀*/
+
+}
+
+#join input{
+    margin: 5px 0; /*label과 동일하게 상하 바깥여백을 지정해야 ui가 깨지지 않음*/
+    border: 1px solid #999; /*입력 필드 테두리 선두께, 실선, 선색 지정 */
+    background-color: #FCFDEA; /*입력박스 배경색 지정 */
+}
+
+#join input.id{
+    width: 100px;
+    height: 18px; /*입력박스 너비, 높이*/
+
+}
+
+#join input.dub{
+    width: 70px;
+    height: 22px;
+    border-radius: 8px;
+    border: none; /*테두리 없어짐 */
+    background-image: url(../images/member/dup.jpg);
+    background-repeat: repeat-x; /*수평x축으로 반복 */
+    background-position: center center;
+    color: #FFFFFF; 
+    font-weight: bold;
+    margin-left: 5px;
+    /*IdCheck 중복체크 버튼과 id입력필드 사이를 띄우려고 바깥왼쪽 여백 줌 */    
+}
+
+#join .pass{
+    width: 150px;
+    height: 18px; /*id 입력박스 너비와 같이 해줌 */
+    
+}
+
+#join .nick{
+    width: 80px;
+    height: 18px;
+
+}
+
+#join .email{
+    width: 200px;
+    height: 18px;
+}
+
+#join .address{
+    width: 300px;
+    height: 18px;
+}
+
+#join .phone{
+    width: 180px;
+    height: 18px;
+}
+
+#buttons {
+    margin: 20px 0 0 0;
+}
+
+#buttons .submit, #buttons .cancel{
+    width: 75px;
+    height: 24px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #ccc;
+    font-size: 14px;
+}
+
+#buttons .submit{
+    background-image: url(../images/member/submit_back.jpg);
+    background-repeat: repeat-x;
+    background-position: center center;
+    color: #fff;
+    margin: 0 0 0 100px;
+}
+
+#buttons .cancel{
+    background-image: url(../images/member/cancel_back.jpg);
+    background-repeat: repeat-x;
+    background-position: center center;
+    margin: 0 0 0 px;
+}

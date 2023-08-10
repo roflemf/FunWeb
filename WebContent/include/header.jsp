@@ -9,13 +9,15 @@ contentType="text/html;charset=UTF-8"은 웹브라우저에 출력되는 문자,
 <link rel = "stylesheet" type="text/css" href="../css/default.css">
 <%-- ../는 한단계 상위 폴더로 이동하라는 의미 --%>
 <link rel = "stylesheet" type="text/css" href="../css/welcome.css">
+<link rel = "stylesheet" type="text/css" href="../css/notice.css">
+<link rel = "stylesheet" type="text/css" href="../css/join.css">
 </head>
 <body>
  <div id="wrap">
   <header> <%-- header; 상단부분 지정(html5에서 추가) --%>
     <%--회사로고 --%>
     <div id="login"><a href="#">login</a> | 
-      <a href="#">Join</a></div>
+      <a href="../member/join.jsp">Join</a></div>
    <div id="logo">
     <a href="../index.jsp"><img src="../images/logo.gif" width="265" height="62" alt="Fun Web"></a>
    </div>
@@ -27,7 +29,7 @@ contentType="text/html;charset=UTF-8"은 웹브라우저에 출력되는 문자,
      <li><a href="../index.jsp">HOME</a></li>
      <li><a href="../company/welcome.jsp">COMPANY</a></li>
      <li><a href="#">SOLUTION</a></li>
-     <li><a href="#">CUSTOMER CENTER</a></li>
+     <li><a href="../center/notice.jsp">CUSTOMER CENTER</a></li>
      <li><a href="#">CONTACT US</a></li>
     </ul>
    </nav>
